@@ -1,0 +1,6 @@
+2016-06-28 11:06:44 IST ERROR:  duplicate key value violates unique constraint "res_currency_unique_name"
+2016-06-28 11:06:44 IST DETAIL:  Key (name)=(INR) already exists.
+2016-06-28 11:06:44 IST STATEMENT:  INSERT INTO "res_currency" ("id", "active", "rounding", "symbol", "name", "position", "create_uid", "write_uid", "create_date", "write_date") VALUES(nextval('res_currency_id_seq'), true, '0.010000', NULL, 'INR', 'after', 1, 1, (now() at time zone 'UTC'), (now() at time zone 'UTC')) RETURNING id
+2016-06-28 12:13:08 IST ERROR:  update or delete on table "mail_alias" violates foreign key constraint "mail_channel_alias_id_fkey" on table "mail_channel"
+2016-06-28 12:13:08 IST DETAIL:  Key (id)=(3) is still referenced from table "mail_channel".
+2016-06-28 12:13:08 IST STATEMENT:  delete from mail_alias where id IN (3)
